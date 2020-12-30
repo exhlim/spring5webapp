@@ -35,7 +35,7 @@ public class BootStrapData implements CommandLineRunner {
 
 		System.out.println("Started in Bootstrap");
 
-		Publisher publisher = new Publisher("Eugene", "Singapore", "Singapore","Jurong","5s123123");
+		Publisher publisher = new Publisher("Eugene", "Singapore", "Singapore","Jurong","5ss123123");
 		publisherRepository.save(publisher);
 
 		Author eric = new Author("Eric", "Evans");
