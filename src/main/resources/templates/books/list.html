@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--Add this xmlns url to the html document so that you have access to the thymeleaf extentions-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Framework Guru</title>
+</head>
+<body>
+
+<h1>Book List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Publisher</th>
+    </tr>
+<!--    Initiating an thymeleaf iterator for books the ${books} is the attribute that we get from the models which is sent to here by the controller-->
+<!--    For each book Thymeleaf will render the 3 <th> tags-->
+    <tr th:each="book : ${books}">
+        <th th:text="${book.id}">123</th>
+        <th th:text="${book.title}">Spring in action</th>
+        <th th:text="${book.publisher.name}">Eugene</th>
+    </tr>
+</table>
+
+</body>
+</html>

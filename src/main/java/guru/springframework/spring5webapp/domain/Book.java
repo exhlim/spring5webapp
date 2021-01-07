@@ -80,7 +80,6 @@ public class Book {
 			", title='" + title + '\'' +
 			", isbn='" + isbn + '\'' +
 			", publisher=" + publisher +
-			", authors=" + authors +
 			'}';
 	}
 
